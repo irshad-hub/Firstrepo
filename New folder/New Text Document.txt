@@ -1,0 +1,7 @@
+pipeline{
+stages{
+stage(){
+creds: user:irshad pass:12345
+}
+}
+}
