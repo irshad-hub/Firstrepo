@@ -3,6 +3,7 @@ stages{
 stage(){
 creds: user:irshad pass:12345
 creds: user:me pass:8909
+hello world
 }
 }
 }
