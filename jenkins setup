@@ -1,0 +1,25 @@
+Jenkins setup:
+================
+1  pwd
+    2  javac
+    3  apt install openjdk-11-jdk-headless
+    4  sudo apt update
+    5  apt install openjdk-11-jdk-headless
+    6  curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key | sudo tee   /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+    7  echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]   https://pkg.jenkins.io/debian-stable binary/ | sudo tee   /etc/apt/sources.list.d/jenkins.list > /dev/null
+    8  cat  /etc/apt/sources.list.d/jenkins.list
+    9  apt update
+   10  sudo apt-get install jenkins
+   11  systemctl status jenkins
+   12  cat /var/lib/jenkins/secrets/initialAdminPassword
+   13  cd /var/lib/jenkins/
+   14  ls -lrt
+   15  cd secrets
+   16  ls -lrt
+   17  cat initialAdminPassword
+   18  ls -lrt
+   19  systemctl status jenkins
+   20  cat /var/lib/jenkins/secrets/initialAdminPassword
+   21  history
+========================
+ps -ef|grep java---->its going to list out all the process(ps -ef), hee we are grepping java
